@@ -71,6 +71,8 @@ def plot_time_performance(performanceData):
     plt.fill_between(testid, FandR23_min, FandR23_max, alpha=0.2)
     plt.legend()
     plt.xticks(testid, testnames, rotation='vertical')
+    plt.xlabel("Instance Name")
+    plt.ylabel("CPU time")
     plt.tight_layout()
     plt.show()
 
